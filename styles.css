@@ -1,0 +1,37 @@
+/* TYPE SELECTORS */
+  body { 
+    text-align: left; 
+    background-color: papayawhip;
+    font-family:Arial, Helvetica, sans-serif
+  } 
+
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    color: darkgrey;
+    font-size: 133%;
+  }
+
+/* ID SELECTORS */
+
+ /* This is a placeholder divider just in case I end up needing them */
+
+/* CLASS SELECTORS */
+
+  /* I chose to format specifically links to songs as there will be multiple of those within my webpage */
+  .songlink {
+   color:darkcyan;
+   font-style: italic;
+  }
+
+/* RELATIONAL SELECTORS */
+  body>footer>p {
+   font-size: 80%;
+   /* adding font style of italic is another way of adding emphasis */
+   font-style:italic;
+   /* an overline gives the idea that this text exists after the "end" of the page. */
+   text-decoration: green wavy overline;
+  }
