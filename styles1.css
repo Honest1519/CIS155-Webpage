@@ -1,29 +1,49 @@
 /* TYPE SELECTORS */
   body { 
     text-align: left; 
-    background-color: papayawhip;
+    background-image: url(linus.webp);
+    background-position: center;
+    background-size:contain;
     font-family:Arial, Helvetica, sans-serif
   } 
 
+  ol {
+    padding-left: 7em;
+  }
+
+  p {
+    padding-left: 7em;
+  }
+
   h1 {
     text-align: center;
+    color: yellow;
   }
 
   h2 {
-    text-align: center;
-    color: darkgrey;
+    background-image: url(linus.webp);
+    background-position: center;
+    background-size:contain;
+    margin-top: 2em;
+    padding-left: 5em;
+    text-align: left;
+    color: pink;
     font-size: 133%;
   }
 
 /* ID SELECTORS */
 
- /* This is a placeholder divider just in case I end up needing them */
+#imsorryjelly {
+  opacity: 0.5;
+  height: 30em;
+  width: auto;
+}
 
 /* CLASS SELECTORS */
 
   /* I chose to format specifically links to songs as there will be multiple of those within my webpage */
   .songlink {
-   color:darkcyan;
+   color:orange;
    font-style: italic;
   }
 
@@ -33,5 +53,5 @@
    /* adding font style of italic is another way of adding emphasis */
    font-style:italic;
    /* an overline gives the idea that this text exists after the "end" of the page. */
-   text-decoration: green wavy overline;
-  }
+   text-decoration: lime wavy overline;
+  }b
