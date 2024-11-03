@@ -1,0 +1,75 @@
+/* CSS STYLESHEET FOR SECONDARY PAGES */
+
+/* TYPE SELECTORS */
+body {
+  text-align: left;
+  background-color: lightgoldenrodyellow;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* ID SELECTORS */
+
+/* navbar id css, formatting entire object */
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* CLASS SELECTORS */
+
+/* navbar class css, formatting options */
+.navbarcontent {
+  float: left;
+}
+
+.navbarcontent a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 2 column css */
+.column {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* art section css */
+.albumart {
+  display: block;
+  /* auto margins center the block. in the future, columns may be added if more artwork is needed */
+  margin-left: auto;
+  margin-right: auto;
+  /* the standard size of album art is 500x500, so exact measurements are unneeded. instead, including a max height and width makes the imahges scalable while ensuring they don't exceed this size */
+  max-height: 100%;
+  max-width: 100%;
+  border: 1em ridge black;
+}
+
+.caption {
+  text-align: center;
+  font-size: 75%;
+}
+
+/* RELATIONAL SELECTORS */
