@@ -14,8 +14,8 @@
     </header>
     <!--navbar code (html)-->
     <ul id="navbar">
-        <li class="navbarcontent"><a class="active" href="index.html">Home</a></li>
-        <li class="navbarcontent"><a href="secondpage.html">&Oacute;merta</a></li>
+        <li class="navbarcontent"><a href="index.html">Home</a></li>
+        <li class="navbarcontent"><a class="active" href="secondpage.html">&Oacute;merta</a></li>
         <li class="navbarcontent"><a href="thirdpage.html">DEVILOOF</a></li>
         <li class="navbarcontent"><a href="fourthpage.html">Madman's Esprit</a></li>
         <li class="navbarcontent"><a href="fifthpage.html">Hail the Sun</a></li>
@@ -26,14 +26,14 @@
 <body>
     <main>
         <!--2 column dividers-->
-        <div class="row">
-            <div class="column">
+        <div id="opener">
+            <div id="what">
                 <p>&Oacute;merta is a nu-metal band hailing from Texas. While technically formed in the early 2000s,
                     fans consider the release of the Hyperviolence EP in 2020 to be the beginning of the Omerta we know
                     and love today. While they only currently have 14 released songs, a double length LP is on the way,
                     set to more than double their discography in early 2025.</p>
             </div>
-            <div class="column">
+            <div id="why">
                 <p> This band remains one of my favorite largely due to their unique style and sound. They manage to put
                     emotions and experiences into words like no other band in the scene. Their unique focus on trauma as
                     a concept rather than personal experience leads to a band where any listener can find themselves in
@@ -47,7 +47,10 @@
                 of their songs deal with trauma or mental illness, with references to events that are often a result of
                 these factors, like self-harm or suicide.</b></p>
         <!--art section, expand or add columns as needed (only one for omerta due to content concerns)-->
-        <img class="albumart" src="img/antiamorous.jpg">
+        <div class="art">
+            <img src="img/antiamorous.jpg">
+        </div>
+        <!--captions seperation makes code a little messy, plan to fix-->
         <p class="caption"><em>Album art for single "Antiamorous". Hyperviolence omitted due to artistic nudity.</em>
         </p>
         <!--history section with links-->

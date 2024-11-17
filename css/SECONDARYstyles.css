@@ -17,6 +17,24 @@ h1 {
 
 /* ID SELECTORS */
 
+/* flex code for module 8, may decide not to keep */
+div#opener {
+  display: flex;
+  flex-direction: row;
+}
+
+div#what {
+margin-right: 1em;
+flex-basis: 50%;
+/* two columns are very simple, just add margins and a basis*/
+}
+
+div#why {
+margin-left: 1em;
+flex-basis: 50%;
+/* two columns are very simple, just add margins and a basis*/
+}
+
 /* navbar id css, formatting entire object */
 #navbar {
   list-style-type: none;
@@ -25,6 +43,20 @@ h1 {
   overflow: hidden;
   background-color: #333;
 }
+
+@media (max-width: 470px) {
+
+  /* I found that when the screen gets REALLY small, a black and white navbar was the most readable */
+  #navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+
+}
+
 
 /* CLASS SELECTORS */
 
@@ -41,6 +73,20 @@ h1 {
   text-decoration: none;
 }
 
+@media screen and (max-width: 600px) {
+  .navbarcontent a {
+    color: white;
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .navbarcontent a {
+    color: black;
+    font-size: 50%;
+  }
+}
+
 /* 2 column css */
 .column {
   box-sizing: border-box;
@@ -55,15 +101,20 @@ h1 {
   clear: both;
 }
 
-/* art section css */
-.albumart {
-  display: block;
-  /* auto margins center the block. in the future, columns may be added if more artwork is needed */
-  margin-left: auto;
-  margin-right: auto;
-  /* the standard size of album art is 500x500, so exact measurements are unneeded. instead, including a max height and width makes the imahges scalable while ensuring they don't exceed this size */
-  max-height: 100%;
+/* art section css (now with flex!) */
+
+.art {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+div.art img {
   max-width: 100%;
+  height: auto;
+  flex: 0 1 auto; /*these values allow the images to shrink but not grow, which allows me to incoporate multiple images on one line!!!!*/
   border: 1em ridge black;
 }
 
