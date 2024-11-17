@@ -40,7 +40,13 @@ h2 {
   }
 
 }
-
+/*runnerup grid, items in class selectors*/
+#runner-ups{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  gap: 10px;
+}
 
 /* CLASS SELECTORS */
 
