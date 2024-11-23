@@ -6,7 +6,7 @@ body {
   background-color: lightgoldenrodyellow;
   background-position: center;
   background-size: contain;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -50,11 +50,19 @@ h2 {
 
 /* CLASS SELECTORS */
 
+.art {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
-/* I chose to format specifically links to songs as there will be multiple of those within my webpage */
-.songlink {
-  color: orange;
-  font-style: italic;
+div.art img {
+  max-width: 100%;
+  height: auto;
+  flex: 0 1 auto; /*these values allow the images to shrink but not grow, which allows me to incoporate multiple images on one line!!!!*/
+  border: 1em ridge black;
 }
 
 .navbarcontent {
