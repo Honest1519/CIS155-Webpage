@@ -112,10 +112,6 @@ background-image: url(../img/banner/bannerhts.png);
   background-color: #141414;
 }
 
-@media screen and (max-width: 600px) {
-  .navbarcontent a {}
-}
-
 /* 2 column css */
 .column {
   box-sizing: border-box;
