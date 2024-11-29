@@ -67,19 +67,19 @@ div#why {
 
 /* ID CSS FOR ESTABLISHING DIFFERENT BACKGROUND IMAGES */
 body#homepage {
-background-image: url(/CIS155-Webpage/img/banner/mainpage.png);
+background-image: url(../img/banner/mainpage.png);
 }
 body#omerta {
-background-image: url(/CIS155-Webpage/img/banner/banneromerta.png);
+background-image: url(../img/banner/banneromerta.png);
 }
 body#deviloof {
-background-image: url(/CIS155-Webpage/img/banner/bannerdeviloof.png);
+background-image: url(../img/banner/bannerdeviloof.png);
 }
 body#mme {
-background-image: url(/CIS155-Webpage/img/banner/bannermme.png);
+background-image: url(../img/banner/bannermme.png);
 }
 body#hts{
-background-image: url(/CIS155-Webpage/img/banner/bannerhts.png);
+background-image: url(../img/banner/bannerhts.png);
 }
 
 /* navbar id css, formatting entire object */
