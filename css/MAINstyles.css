@@ -1,26 +1,90 @@
-/* CSS STYLESHEET FOR HOMEPAGE */
+/* CSS STYLESHEET FOR SECONDARY PAGES */
 
 /* TYPE SELECTORS */
+
 body {
   text-align: left;
-  background-color: lightgoldenrodyellow;
-  background-position: center;
-  background-size: contain;
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:20px;
 }
 
-h1 {
-  text-align: center;
+p {
+  text-align: left;
 }
 
 h2 {
-  text-align: left;
-  font-size: 133%;
+  /* padding for readability, padding had to be removed for vk headers, see line 40.*/
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+  /* formatting footer */
+footer h3 {
+  text-align: center;
+  margin-top: 75px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ID SELECTORS */
 
+h2#vk {
+  /* removing readability margin for header */
+  margin-top: 20px;
+}
+
+div#twotonebody {
+  /* this divider allows the body of the page to be a light yellow */
+  background-color: #e3dac9;
+  padding: 5px;
+}
+
+/* flex code for two column layout*/
+div#opener {
+  display: flex;
+  flex-direction: row;
+}
+
+div#what {
+  margin-right: 1em;
+  flex-basis: 50%;
+  /* two columns are very simple, just add margins and a basis*/
+}
+
+div#why {
+  margin-left: 1em;
+  flex-basis: 50%;
+  /* two columns are very simple, just add margins and a basis*/
+}
+
+/* ID CSS FOR ESTABLISHING DIFFERENT BACKGROUND IMAGES */
+body#homepage {
+background-image: url(/img/banner/mainpage.png);
+}
+body#omerta {
+background-image: url(/img/banner/banneromerta.png);
+}
+body#deviloof {
+background-image: url(/img/banner/bannerdeviloof.png);
+}
+body#mme {
+background-image: url(/img/banner/bannermme.png);
+}
+body#hts{
+background-image: url(/img/banner/bannerhts.png);
+}
+
+/* navbar id css, formatting entire object */
 #navbar {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -28,27 +92,44 @@ h2 {
   background-color: #333;
 }
 
-@media (max-width: 470px) {
-
-  /* I found that when the screen gets REALLY small, a black and white navbar was the most readable */
-  #navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-  }
-
-}
-/*runnerup grid, items in class selectors*/
-#runner-ups{
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: auto;
-  gap: 10px;
-}
-
 /* CLASS SELECTORS */
+
+/* navbar class css, formatting options */
+.navbarcontent {
+  float: left;
+}
+
+.navbarcontent a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #141414;
+}
+
+@media screen and (max-width: 600px) {
+  .navbarcontent a {}
+}
+
+/* 2 column css */
+.column {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* art section css (now with flex!) */
 
 .art {
   display: flex;
@@ -61,40 +142,27 @@ h2 {
 div.art img {
   max-width: 100%;
   height: auto;
-  flex: 0 1 auto; /*these values allow the images to shrink but not grow, which allows me to incoporate multiple images on one line!!!!*/
+  flex: 0 1 auto;
+  /*these values allow the images to shrink but not grow, which allows me to incoporate multiple images on one line!!!!*/
   border: 1em ridge black;
 }
 
-.navbarcontent {
-  float: left;
-}
-
-.navbarcontent a {
-  display: block;
-  color: white;
+.caption {
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  font-size: 75%;
 }
 
-@media screen and (max-width: 600px) {
-  .navbarcontent a {
-    color: white;
-    font-size: 75%;
-  }
-}
+/* logo section (similar to art) */
 
-@media screen and (max-width: 470px) {
-  .navbarcontent a {
-    color: black;
-    font-size: 50%;
-  }
-}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  /*drop shadow code for usability*/
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 
+}
 
 /* RELATIONAL SELECTORS */
-body>footer>p {
-  font-size: 80%;
-  /* adding font style of italic is another way of adding emphasis */
-  font-style: italic;
-}
