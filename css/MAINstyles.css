@@ -44,7 +44,7 @@ h2#vk {
 
 div#twotonebody {
   /* this divider allows the body of the page to be a light yellow */
-  background-color: #e3dac9;
+  background-color: #e3dac9d0;
   padding: 5px;
 }
 
@@ -104,7 +104,7 @@ background-image: url(../img/banner/bannerhts.png);
   display: flex;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
   text-decoration: none;
 }
 
@@ -130,6 +130,7 @@ background-image: url(../img/banner/bannerhts.png);
 
 .art {
   display: flex;
+  /* want flex wrap on to make sure multiple images can share the same space if theirs room */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -152,7 +153,11 @@ div.art img {
 /* logo section (similar to art) */
 
 .logo {
-  display: block;
+  display: flex;
+  /* Scale image */
+  max-width: 100%;
+  height: auto;
+  /* center image */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
